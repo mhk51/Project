@@ -11,9 +11,8 @@ import subprocess
 
 ###########Sources:
 #######1. https://github.com/mrahtz/ultra_ping
-#######2.
+#######2.https://stackoverflow.com/questions/55716098/enumerate-devices-connected-to-my-router-using-python-3-in-windows
 #######3.https://github.com/satoshi03
-#######4.https://gist.github.com/pklaus/856268
 
 s = 0 #success
 f = 1 #fail
@@ -304,11 +303,12 @@ class Tool(): ## class for pinging the needed information #########Zahraa
             process.print_messsages()
             #
             # representation for the number of bytes received and the corresponding Ips
+            ## Jad Jawad
             data ={IP : Size_of_Packet}
             Size =list(data.keys())
             Ips = list(data.values())
             
-            #fig = plt.figure(figsize = (10,5))
+            #fig = plt.figure(figsize = (10,5))  
             plt.figure(1)
             plt.bar(Size, Ips, color ='Red', width = 0.5)
             plt.xlabel("Ip addresses")
