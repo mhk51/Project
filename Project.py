@@ -13,6 +13,7 @@ import subprocess
 #######1. https://github.com/mrahtz/ultra_ping
 #######2.
 #######3.https://github.com/satoshi03
+#######4.https://gist.github.com/pklaus/856268
 
 s = 0 #success
 f = 1 #fail
